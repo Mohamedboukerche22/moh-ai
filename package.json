@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "bytez.js": "^3.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-basic-auth": "^1.2.1",
+    "mathjs": "^15.1.0",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}

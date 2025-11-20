@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="google-site-verification" content="AmPj3_U2Kv_-qQ9Unx-Vj7XD_oCb-lXXcfrcYDHbP9g" />
+<meta name="description" content="
+Mohamed Boukerche Elsadik – Full-stack web developer from Algeria. Explore his portfolio showcasing Python and C++ projects, web development applications, and competitive programming solutions.
+">
+  <link rel="icon" href="images/linux.png" type="image/x-icon">
+<meta name="keywords" content="
+Mohamed Boukerche, Boukerche Mohamed, Mohamed Boukerche Elsadik, 
+Mohamed B. Elsadik, M. Boukerche, Mohamed Boukerche portfolio, 
+Full-stack web developer Mohamed Boukerche, Python projects Mohamed Boukerche, 
+C++ projects Mohamed Boukerche, Web development portfolio Mohamed Boukerche, 
+Competitive programming Mohamed Boukerche, Mohamed Boukerche Algeria, 
+Mohamed Boukerche freelance developer, Mohamed Boukerche coding projects, 
+Boukerche Mohamed web developer, Boukerche Mohamed Python, Boukerche Mohamed C++, 
+Mohamed Boukerche projects online, Mohamed Boukerche GitHub, Mohamed Boukerche coding portfolio
+">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed Boukerche</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d0d;
+      color: #eee;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
+      padding: 120px 20px 80px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      color: #00d9ff;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: #00d9ff;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      color: #ffd700;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: #00d9ff;
+      color: #0d0d0d;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00b8d9;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 60px 0;
+      background: #111;
+    }
+
+    .projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #00d9ff;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      border: 1px solid #333;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    }
+
+    .project-image {
+      height: 180px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.05);
+    }
+
+    .project-info {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .project-info h3 {
+      margin: 0 0 10px 0;
+      color: #00d9ff;
+      font-size: 1.4rem;
+    }
+
+    .project-info p {
+      color: #aaa;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .project-links a {
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .project-links a:first-child {
+      background: #00d9ff;
+      color: #0d0d0d;
+    }
+
+    .project-links a:first-child:hover {
+      background: #00b8d9;
+    }
+
+    .project-links a:last-child {
+      border: 1px solid #00d9ff;
+      color: #00d9ff;
+    }
+
+    .project-links a:last-child:hover {
+      background: rgba(0, 217, 255, 0.1);
+    }
+
+    /* Skills Section */
+    .skills {
+      padding: 60px 20px;
+      background: #111;
+    }
+
+    .skills h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #00d9ff;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .skills-category {
+    margin-bottom: 40px;}
+
+   .skills-category h3 {
+   color: #ffd700;
+   margin-bottom: 15px;}
+
+   .skill-logo {
+   width: 70px;
+   height: 70px;
+   transition: transform 0.3s, filter 0.3s;
+   filter: brightness(0.8);
+  }
+
+ .skill-logo:hover {
+    transform: scale(1.2) rotate(5deg);
+    filter: brightness(1);
+   }
+
+    .skill-logo {
+      width: 80px;
+      height: 80px;
+      transition: transform 0.3s;
+    }
+
+    .skill-logo:hover {
+      transform: scale(1.2);
+    }
+
+    /* Competitive Programming Section */
+    .cp-accounts {
+      padding: 60px 20px;
+      background: #0d0d0d;
+      color: #eee;
+      text-align: center;
+    }
+
+    .cp-accounts h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #00d9ff;
+    }
+
+    .cp-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .cp-grid a {
+      text-decoration: none;
+      color: #eee;
+      transition: transform 0.3s;
+    }
+
+    .cp-grid a:hover {
+      transform: scale(1.1);
+      color: #00d9ff;
+    }
+
+    .cp-logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 20px;
+      background: #111;
+      color: #eee;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00d9ff;
+    }
+
+    .contact-info {
+      font-size: 1.2rem;
+    }
+
+    .contact-info a {
+      color: #00d9ff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: #ffd700;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d0d0d;
+      color: #555;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>I'm <span class="highlight">Mohamed Boukerche</span></h1>
+      <p>17 y.o | Algerian 🇩🇿 | Competitive Programmer | Linux user | web-developer/designer</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/mb_ghost_22/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/mohamed.boukerche.399" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/Mohamedboukerche22" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com/users/1118946243071193108" target="_blank"><i class="fab fa-discord"></i></a>
+      </div>
+      <a href="https://mohamedboukerche22.github.io/support/" class="btn">💖 Support Me</a>
+    </div>
+  </header>
+
+
+  <section class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/screenshot.png" alt="AOI Editor Screenshot">
+          </div>
+          <div class="project-info">
+            <h3>AOI Editor</h3>
+            <p>A lightweight terminal-based code editor for competitive programming with C++ syntax highlighting and quick compilation.</p>
+            <div class="project-links">
+              <a href="https://github.com/Mohamedboukerche22/AOI-IDE" target="_blank">View Code</a>
+              <a href="https://mohamedboukerche22.github.io/AOI-WEB-IDE/" target="_blank">install</a>
+            </div>
+          </div>
+        </div>
+        
+       
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/lycee.png" alt="Project 2 Screenshot">
+          </div>
+          <div class="project-info">
+            <h3>lycee website</h3>
+            <p>mohamed boudiaf info with progress between students and teachers.</p>
+            <div class="project-links">
+              <a href="https://github.com/Mohamedboukerche22/mohamedboudiaf2" target="_blank">View Code</a>
+              <a href="https://mohamedboukerche22.github.io/mohamedboudiaf2/" target="_blank">check</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/Screenshot0.png" alt="Project 3 Screenshot">
+          </div>
+          <div class="project-info">
+            <h3>C-moh</h3>
+            <p>A custom English-like programming language built in C++.</p>
+            <div class="project-links">
+              <a href="https://github.com/Mohamedboukerche22/c-moh" target="_blank">View Code</a>
+              <a href="https://mohamedboukerche22.github.io/c-moh-web/" target="_blank">check</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/cowos2.png" alt="Project 2 Screenshot">
+          </div>
+          <div class="project-info">
+            <h3>cow os</h3>
+            <p>small operating system run on browsers</p>
+            <div class="project-links">
+              <a href="https://github.com/Mohamedboukerche22/cowos2" target="_blank">View Code</a>
+              <a href="https://mohamedboukerche22.github.io/cowos2/" target="_blank">try it</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+        <!--<img src="images/cpp.png" alt="C++" class="skill-logo">
+        <img src="images/python.png" alt="Python" class="skill-logo">
+        <img src="images/html.png" alt="HTML" class="skill-logo">
+        <img src="images/css.png" alt="CSS" class="skill-logo">
+        <img src="images/js.png" alt="JavaScript" class="skill-logo">
+        <img src="images/mysql.png" alt="MySQL" class="skill-logo">
+        <img src="images/php.svg" alt="PHP" class="skill-logo">
+        <img src="images/linux.png" alt="Linux" class="skill-logo">
+
+        <div align="center" class="skill-logo">  
+          <div class="skills-grid">
+
+    <img src="https://skillicons.dev/icons?i=c,androidstudio,bash,cs,cpp,css,electron,git,html,js,md,mysql,nodejs,php,py,react," />
+
+</div>
+
+        
+<div align="center" class="skill-logo">
+
+    <img src="https://skillicons.dev/icons?i=kali,arch,debian,linux,blender,ubuntu,unity,figma" />
+
+  </div>
+      </div>
+    </div>
+  </section>-->
+  <section class="skills">
+  <div class="container">
+    <h2>Languages & Skills </h2>
+
+    <div class="skills-category">
+      <h3>Programming Languages</h3>
+      <div class="skills-grid">
+        <img src="https://skillicons.dev/icons?i=cpp" title="C++" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=py" title="Python" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=c" title="C" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=js" title="JavaScript" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=php" title="PHP" class="skill-logo">
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Frameworks & Tools</h3>
+      <div class="skills-grid">
+        <img src="https://skillicons.dev/icons?i=react" title="React" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=nodejs" title="Node.js" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=mysql" title="MySQL" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=electron" title="Electron" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=git" title="Git" class="skill-logo">
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Operating Systems</h3>
+      <div class="skills-grid">
+        <img src="https://skillicons.dev/icons?i=linux" title="Linux" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=arch" title="Arch Linux" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=kali" title="Kali Linux" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=ubuntu" title="Ubuntu" class="skill-logo">
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Design / 3D /game-dev</h3>
+      <div class="skills-grid">
+        <img src="https://skillicons.dev/icons?i=figma" title="Figma" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=blender" title="Blender" class="skill-logo">
+        <img src="https://skillicons.dev/icons?i=unity" title="Unity" class="skill-logo">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="cp-accounts">
+    <div class="container">
+      <h2>Competitive Programming Profiles 🧠</h2>
+      <div class="cp-grid">
+        <a href="https://codeforces.com/profile/mohamedboukerche55" target="_blank">
+          <img src="images/codeforces.png" alt="Codeforces" class="cp-logo">
+          <p>Codeforces</p>
+        </a>
+        <a href="https://atcoder.jp/users/mohamedboukerche" target="_blank">
+          <img src="images/atcoder.png" alt="AtCoder" class="cp-logo">
+          <p>AtCoder</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Me 📬</h2>
+      <p>You can reach me easily via email or social media!</p>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:mohamedboukerche55@gmail.com">mohamedboukerche55@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mohamed Boukerche. Made with ❤️ in Algeria.</p>
+  </footer>
+</body>
+</html>
