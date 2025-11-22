@@ -11,7 +11,7 @@ const bot = new TelegramBot(token, { polling: true });
 
 const key = process.env.BYTEZ_API_KEY; 
 const sdk = new Bytez(key);
-const model = sdk.model("openai/gpt-4o-mini");
+const model = sdk.model("openai/gpt-4.1-mini")
 
 let users = [];
 let conversations = {}; 
@@ -49,13 +49,7 @@ bot.onText(/\/ask (.+)/, (msg, match) => {
   const chatId = msg.chat.id;
   const question = match[1].trim();
   const qLower = question.toLowerCase();
-  if (
-    qLower.includes("who are you") ||
-    qLower.includes("your name") ||
-    qLower.includes("creator") ||
-    qLower.includes("who created you") ||
-    qLower.includes("who made you")
-  ) {
+  if (/who are you|your name|creator|who created you|who made you/.test(qLower)) {
     bot.sendMessage(chatId, "I am Moh-GPT, created by Mohamed Boukerche! 👋");
     return;
   }
